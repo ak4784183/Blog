@@ -1,6 +1,4 @@
-# For、For in和Foreach三个循环的区别
-
-## 总结，要自己看得懂，越简写的越是精华，不需要太多废话，一语中的是关键
+# For、For in、Foreach以及For of循环的区别
 
 ### 1.for遍历
 
@@ -29,3 +27,13 @@ array.forEach(function(currentValue, index, arr), thisValue)
 ```
 
 什么意思呢，就是给arr数组的index索引的currentValue项，进行函数的操作，换句话说就是给每个项调用函数操作
+
+### 4.for of遍历
+
+```
+for (variable of iterable) {
+    //statements
+}
+```
+
+和for in很像，但是for of无法遍历对象，前者输出索引，后者输出数组的值
